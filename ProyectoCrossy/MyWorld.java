@@ -39,10 +39,13 @@ public class MyWorld extends World
                 if (map [row][col] == 0)
                     addObject(new Image("grass.jpg"),col * 50,row * 50 );
                 else if(map[row][col] == 1)
-                    addObject(new Image("water.jpg"), col*50, row*50);
+                    addObject(new Enemy("water.jpg"), col*50, row*50);
                 else if(map[row][col] == 2)
                     addObject(new Image("sand.jpg"), col*50, row*50);
-                //else if(map[row][col] == 3])
+                else if(map[row][col] == 3){
+                    addObject(new Enemy("water.jpg"), col*50, row*50);
+                    //addObject(new )
+                }
                 //else if(map[row][col] == 4])
                 //else if(map[row][col] == 5])
                 //else if(map[row][col] == 6])
