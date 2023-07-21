@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class MyWorld here.
@@ -15,19 +15,19 @@ public class MyWorld extends World
      */
     int [][] map= 
                {{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                {1,3,3,3,3,1,1,1,1,3,3,3,3,1,1,1},
+                {1,1,1,3,3,3,3,1,1,1,1,1,1,1,1,1},
+                {1,1,1,1,1,1,1,1,1,3,3,3,3,1,1,1},
+                {1,1,3,3,3,3,1,1,1,1,1,1,1,1,1,1},
+                {1,1,1,1,1,3,3,3,1,1,1,1,3,3,3,1},
+                {1,3,3,3,3,1,1,3,3,3,3,1,3,3,3,1},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
+                {2,2,2,2,2,2,2,2,2,2,2,4,4,2,2,2},
+                {2,4,4,2,2,2,2,2,2,2,2,4,2,2,2,2},
+                {2,2,2,2,2,4,4,2,2,2,2,4,4,4,2,2},
                 {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
-                {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
-                {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
-                {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
-                {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2},
+                {2,2,4,4,2,2,2,2,2,2,2,2,2,2,2,2},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
     public MyWorld()
@@ -44,9 +44,15 @@ public class MyWorld extends World
                     addObject(new Image("sand.jpg"), col*50, row*50);
                 else if(map[row][col] == 3){
                     addObject(new Enemy("water.jpg"), col*50, row*50);
-                    //addObject(new )
+                    addObject(new Log("log.png"),col*50, row*50);
+               
                 }
-                //else if(map[row][col] == 4])
+                else if(map[row][col]== 4){
+                    addObject(new Image("sand.jpg"), col*50, row*50);
+                    addObject(new Enemy("witch.png"),col*50, row*50);
+                    
+                }
+                    //else if(map[row][col] == 4])
                 //else if(map[row][col] == 5])
                 //else if(map[row][col] == 6])
                 //else if(map[row][col] == 7])
