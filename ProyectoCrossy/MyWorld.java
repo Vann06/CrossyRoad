@@ -69,6 +69,7 @@ public class MyWorld extends World
                 //else if(map[row][col] == 7])
                 //else if(map[row][col] == 8])
                 addObject(new knight(),375,700);
+                setPaintOrder(knight.class,Log.class, Enemy.class);
 
             
     }

@@ -12,6 +12,7 @@ public class Log extends Actor
      * Act - do whatever the Log wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    int count= 0;
     String logName;
     public Log(String logName)
     {
@@ -23,6 +24,14 @@ public class Log extends Actor
     
     public void act()
     {
-        // Add your action code here.
+        count++;
+        if(count % 20 == 0 && this.logName == "log.png"){
+            setLocation(getX()- 20,getY()); 
+        }
+        if(getX()==0)
+        setLocation(getWorld().getWidth()-2,getY());
+        if(getX() == getWorld().getWidth()-1)
+        setLocation(1,getY());
+        
     }
 }
