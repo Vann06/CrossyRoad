@@ -28,6 +28,9 @@ public class Log extends Actor
         if(count % 20 == 0 && this.logName == "log.png"){
             setLocation(getX()- 20,getY()); 
         }
+        if(count % 20 == 0 && this.logName == "turtle.png"){
+            setLocation(getX()+ 20,getY()); 
+        }
         if(getX()==0)
         setLocation(getWorld().getWidth()-2,getY());
         if(getX() == getWorld().getWidth()-1)
