@@ -12,6 +12,7 @@ public class knight extends Actor
      * Act - do whatever the knight wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+
     public knight()
     {
         getImage().scale(50,50);
@@ -36,16 +37,23 @@ public class knight extends Actor
     public void youLose()
     {
         if(isTouching(Enemy.class) && !isTouching(Log.class)){
+        Greenfoot.playSound("au.mp3");
         getWorld().showText("YOU LOOSE!!", 350,50);
         Greenfoot.stop();
+        
     }
         }
     
     public void youWin()
     {
         if(getY()<60){
-            getWorld().showText("YOU WIN!!", getWorld().getWidth()/2,50);
+            getWorld().showText ("YOU WIN!!", getWorld(). getWidth() /2,50);
             Greenfoot.stop();
+            
         }  
     }
-}
+    
+
+    }
+
+
