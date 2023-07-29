@@ -22,11 +22,16 @@ dependency5.type=UsesDependency
 dependency6.from=knight
 dependency6.to=Enemy
 dependency6.type=UsesDependency
+<<<<<<< Updated upstream
 dependency7.from=knight
 dependency7.to=Log
 dependency7.type=UsesDependency
 editor.fx.0.height=900
 editor.fx.0.width=1440
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+>>>>>>> Stashed changes
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=848
@@ -98,5 +103,10 @@ target7.y=0
 version=3.0.0
 width=966
 world.lastInstantiated=MyWorld
+<<<<<<< Updated upstream
 xPosition=474
 yPosition=0
+=======
+xPosition=382
+yPosition=119
+>>>>>>> Stashed changes
