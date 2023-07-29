@@ -47,7 +47,8 @@ public class knight extends Actor
     public void youWin()
     {
         if(getY()<60){
-            getWorld().showText ("YOU WIN!!", getWorld(). getWidth() /2,50);
+            Greenfoot.playSound("win.mp3");
+            Greenfoot.setWorld(new Win());
             Greenfoot.stop();
             
         }  
